@@ -1,8 +1,8 @@
 name              'mongodb'
-maintainer        'Kenneth Yang'
-maintainer_email  'kenneth_yang@trend.com.tw'
+maintainer        'edelight GmbH'
+maintainer_email  'markus.korn@edelight.de'
 license           'Apache 2.0'
-description       'Installs and configures mongodb, fix MongoDB version to 2.6.11'
+description       'Installs and configures mongodb'
 version           '0.16.2'
 
 recipe 'mongodb', 'Installs and configures a single node mongodb instance'
@@ -26,7 +26,7 @@ end
 attribute 'mongodb/config/dbpath',
           :display_name => 'dbpath',
           :description => 'Path to store the mongodb data',
-          :default => '/data'
+          :default => '/var/lib/mongodb'
 
 attribute 'mongodb/config/logpath',
           :display_name => 'logpath',

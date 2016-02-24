@@ -1,3 +1,3 @@
 source "https://supermarket.chef.io"
 
-cookbook 'mongodb', git: https://github.com/aikenyang/MyMongoDB.git
+cookbook 'mongodb', git: 'git://github.com/aikenyang/MyMongoDB.git'
